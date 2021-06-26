@@ -14,7 +14,7 @@ def printReleases():
 
    for i in url["assets"]: 
       print ("     "+str(assetIndex)+": "+str(i["name"]))
-      assetIndex = assetIndex + 1
+      assetIndex += 1
    return
 
 printReleases()
