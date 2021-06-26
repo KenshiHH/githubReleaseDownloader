@@ -2,8 +2,8 @@ import os
 import requests
 from tqdm import tqdm
 from zipfile import ZipFile
-account = "supermerill"
-repository = "SuperSlicer"
+account = "ventoy"
+repository = "ventoy"
 bValidInt = False
 url = requests.get("https://api.github.com/repos/"+account+"/"+repository+"/releases/latest").json()
 maxRange = len(url["assets"])
